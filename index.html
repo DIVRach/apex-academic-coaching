@@ -16,36 +16,166 @@
   <body>
     <a class="skip-link" href="#main">Skip to main content</a>
 
-    <header>
-      <nav aria-label="Main navigation">
-        <!-- Step 4: logo and links -->
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="logo" href="#hero">Apex Academic Coaching</a>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </nav>
     </header>
 
     <main id="main">
-      <section id="hero" aria-labelledby="hero-title">
-        <!-- Step 3 -->
+      <section id="hero" class="hero" aria-labelledby="hero-title">
+        <h1 id="hero-title">Unlock Your Dream University</h1>
+        <p>
+          Personalized, elite-level tutoring and test preparation to help
+          students master complex subjects and gain admission to top-tier
+          colleges.
+        </p>
+        <a class="button" href="#contact"
+          >Book a Free 15-Minute Strategy Call</a
+        >
       </section>
 
-      <section id="about" aria-labelledby="about-title">
-        <!-- Step 3 -->
+      <section id="about" class="about" aria-labelledby="about-title">
+        <h2 id="about-title">Confidence Starts Here</h2>
+        <p>
+          At Apex Academic Coaching, we work with high school students who are
+          aiming high, and with the parents who want to support them. Every
+          student gets a plan built around their goals, their learning style,
+          and their schedule.
+        </p>
+        <p>
+          Our approach is simple: understand the student, set clear targets, and
+          build the skills and confidence to reach them.
+        </p>
       </section>
 
-      <section id="services" aria-labelledby="services-title">
-        <!-- Step 3 -->
+      <section id="services" class="services" aria-labelledby="services-title">
+        <h2 id="services-title">How We Help</h2>
+
+        <div class="card-grid">
+          <article class="card">
+            <h3>1-on-1 Subject Tutoring</h3>
+            <p>
+              Personalized deep-dives into math, science, and humanities to turn
+              struggles into straight A's.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>SAT &amp; ACT Mastery</h3>
+            <p>
+              Data-driven test prep strategies designed to maximize scores and
+              expand college options.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>College Essay &amp; Admissions Coaching</h3>
+            <p>
+              Expert guidance to craft compelling personal narratives that stand
+              out to admissions committees.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Study Skills &amp; Mentorship</h3>
+            <p>
+              Building lifelong habits in time management, organization, and
+              stress reduction.
+            </p>
+          </article>
+        </div>
       </section>
 
-      <section id="faq" aria-labelledby="faq-title">
-        <!-- Step 3 -->
+      <section id="faq" class="faq" aria-labelledby="faq-title">
+        <h2 id="faq-title">Frequently Asked Questions</h2>
+
+        <details>
+          <summary>How do you match students with the right tutor?</summary>
+          <p>
+            We look at your child's academic goals, learning style, and
+            personality to pair them with a tutor who will inspire and challenge
+            them.
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            What happens if a student needs to reschedule a session?
+          </summary>
+          <p>
+            We offer a flexible 24-hour cancellation policy. Sessions
+            rescheduled outside of that window can easily be moved to another
+            day that week.
+          </p>
+        </details>
+
+        <details>
+          <summary>Do you offer in-person or online sessions?</summary>
+          <p>
+            We provide highly interactive online tutoring via a digital
+            whiteboard, as well as in-person sessions depending on local tutor
+            availability.
+          </p>
+        </details>
       </section>
 
-      <section id="contact" aria-labelledby="contact-title">
-        <!-- Step 3 -->
+      <section id="contact" class="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">Book Your Free Strategy Call</h2>
+        <p>Tell us a little about your goals and we'll get back to you.</p>
+
+        <form id="contact-form" action="#" method="post" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              autocomplete="name"
+              required
+              aria-describedby="name-error"
+            />
+            <p class="error" id="name-error" aria-live="polite"></p>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              autocomplete="email"
+              required
+              aria-describedby="email-error"
+            />
+            <p class="error" id="email-error" aria-live="polite"></p>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              required
+              aria-describedby="message-error"
+            ></textarea>
+            <p class="error" id="message-error" aria-live="polite"></p>
+          </div>
+
+          <button type="submit" class="button">Send Message</button>
+        </form>
       </section>
     </main>
 
-    <footer>
-      <!-- Step 3 -->
+    <footer class="site-footer">
+      <p>&copy; 2026 Apex Academic Coaching. All rights reserved.</p>
     </footer>
   </body>
 </html>
