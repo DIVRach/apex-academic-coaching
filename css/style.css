@@ -264,3 +264,15 @@ textarea {
   margin: 0;
 }
 
+/* Accessibility polish in CSS */
+/* Keep anchored sections from hiding under the top of the screen */
+section {
+  scroll-margin-top: 1rem;
+}
+
+/* Smooth scrolling, but only for people who haven't asked for less motion */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
